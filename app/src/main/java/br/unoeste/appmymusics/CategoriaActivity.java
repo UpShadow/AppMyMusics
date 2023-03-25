@@ -36,8 +36,8 @@ public class CategoriaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_categoria);
         lvCategoria = findViewById(R.id.lvCategoria);
         linearLayout = findViewById(R.id.linearLayout);
-        btConfirmar=findViewById(R.id.btConfirmar);
-        etGenero=findViewById(R.id.etGenero);
+        btConfirmar=findViewById(R.id.btConfirmarMusica);
+        etGenero=findViewById(R.id.etMusica);
         fabNovaCategoria=findViewById(R.id.fabNovaCategoria); //2
         carregarListView("");
         linearLayout.setVisibility(View.GONE);
@@ -86,16 +86,15 @@ public class CategoriaActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1,generos);
         lvCategoria.setAdapter(adapter);
     }
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId())
         {
             case R.id.itncategoria:
+                // cadastrar nova categoria
                 linearLayout.setVisibility(View.VISIBLE);
                 etGenero.setText("");
                 etGenero.requestFocus();
-                // cadastrar nova categoria
                 break;
             case R.id.itvoltar:
                 onBackPressed();
