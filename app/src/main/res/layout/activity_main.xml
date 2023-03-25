@@ -6,8 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNovaMusica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="64dp"
+        android:clickable="true"
+        app:backgroundTint="#69EC6F"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/baseline_add_circle_outline_24" />
+
     <ListView
-        android:id="@+id/lvMusicas"
+        android:id="@+id/lvMusica"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"
@@ -18,4 +30,64 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#D1FDCF"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/etAno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Informe o  ano"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etMusica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Informe o  nome da musica"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etInterprete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Informe o  Interprete"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <Spinner
+            android:id="@+id/spnGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etDuracao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Informe a duração"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btConfirmarMusica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#49D14F"
+            android:text="Confirmar" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
