@@ -5,7 +5,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.widget.Toast;
 
-
+//import com.example.aluno.appdatabase.db.bean.Genero;
+//import com.example.aluno.appdatabase.db.util.Conexao;
 
 import java.util.ArrayList;
 

@@ -3,18 +3,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/itmusica"
-        android:title="Adicionar nova música" />
-    <item
-        android:id="@+id/itcategoria"
-        android:title="Categorias" />
-    <item
-        android:id="@+id/itfechar"
-        android:title="Fechar" />
-    <item
-        android:id="@+id/itemSearchMusics"
+        android:id="@+id/searchItem2"
         android:icon="@drawable/baseline_search_24"
         android:title="Search"
         app:actionViewClass="android.widget.SearchView"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/itmusica"
+        android:title="Nova música ..." />
+    <item
+        android:id="@+id/itcategoria"
+        android:title="Categorias ..." />
+    <item
+        android:id="@+id/itfechar"
+        android:title="Fechar" />
 </menu>

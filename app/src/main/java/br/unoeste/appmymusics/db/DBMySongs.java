@@ -22,8 +22,9 @@ public class DBMySongs extends SQLiteOpenHelper {
            "mus_interprete VARCHAR (30), " +
            "mus_genero INTEGER REFERENCES genero (gen_id), " +
            "mus_duracao NUMERIC (4, 1) );");
-        db.execSQL("insert into genero (gen_nome)  values ('rock nacional')");
-        db.execSQL("insert into genero (gen_nome)  values ('metal')");
+
+        db.execSQL("insert into genero (gen_nome) values ('rock nacional')");
+        db.execSQL("insert into genero (gen_nome) values ('metal')");
 
      }
 

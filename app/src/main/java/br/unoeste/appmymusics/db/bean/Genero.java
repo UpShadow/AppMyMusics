@@ -36,6 +36,6 @@ public class Genero {
 
     @Override
     public String toString() {
-        return nome+" ("+id+") ";
+        return nome+"("+id+")";
     }
 }

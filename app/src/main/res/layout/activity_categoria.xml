@@ -10,22 +10,25 @@
         android:id="@+id/fabNovaCategoria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:clickable="true"
-        app:backgroundTint="#69EC6F"
-        app:layout_constraintBottom_toBottomOf="@+id/lvCategoria"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/baseline_add_circle_outline_24" />
+        app:backgroundTint="#B4DEF2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/lvCategoria"
+        app:maxImageSize="62dp"
+        app:rippleColor="#857676"
+        app:srcCompat="@drawable/baseline_add_circle_24" />
 
     <ListView
         android:id="@+id/lvCategoria"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -36,26 +39,29 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="#D1FDCF"
+        android:background="#E2C0EA"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <EditText
-            android:id="@+id/etMusica"
+            android:id="@+id/etGenero"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:ems="10"
-            android:hint="Informe o  nome de um gênero musical"
+            android:hint="Infome o nome de um genêro musical"
             android:inputType="textPersonName"
-            android:textAlignment="center" />
+            android:textAlignment="textStart" />
 
         <Button
-            android:id="@+id/btConfirmarMusica"
+            android:id="@+id/btConfirmar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#49D14F"
+            android:layout_marginEnd="5dp"
             android:text="Confirmar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

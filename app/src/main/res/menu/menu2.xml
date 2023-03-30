@@ -4,12 +4,12 @@
 
     <item
         android:id="@+id/itncategoria"
-        android:title="Nova Categoria" />
+        android:title="Nova categoria ..." />
     <item
         android:id="@+id/itvoltar"
-        android:title="Voltar" />
+        android:title="Voltar ..." />
     <item
-        android:id="@+id/itemSearch"
+        android:id="@+id/searchItem"
         android:icon="@drawable/baseline_search_24"
         android:title="Search"
         app:actionViewClass="android.widget.SearchView"

@@ -5,7 +5,10 @@ import android.content.Context;
 import android.database.Cursor;
 import android.widget.Toast;
 
-
+//import com.example.aluno.appdatabase.db.bean.Musica;
+//import com.example.aluno.appdatabase.db.util.Conexao;
+//
+//import java.sql.ResultSet;
 import java.util.ArrayList;
 
 import br.unoeste.appmymusics.db.bean.Musica;
